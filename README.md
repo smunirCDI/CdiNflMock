@@ -1,3 +1,3 @@
 # CdiNflMock
 
-link: 
+link: https://smunircdi.github.io/CdiNflMock/
