@@ -129,7 +129,7 @@
     height: 20px;
 }
 .cstmSelect{
-    padding: 20px;
+    padding: 13px;
     border: 2px solid rgba(197, 197, 197, 0.265);
     border-radius: 5px;
     text-transform: uppercase;
@@ -156,4 +156,42 @@
 .nflPrefers h4{
     margin-top: 20px;
     color: #1434cb;
+}
+
+.cstmNavBtnRow{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.cstmNavBtnRow li {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+}
+.cstmNavBtn{
+    background-color: rgb(59, 59, 59);
+    padding: 10px 20px;
+    color: white;
+    width: 200px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.cstmNavBtn:hover {
+    
+    background-color: rgb(223, 223, 223);
+    color: black;
+    border: 1px solid black;
+}
+.standMedButton {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #D50A0A !important;
+}
+.standMedButton a {
+    color: red;
 }
