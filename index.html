@@ -205,13 +205,16 @@
             </nav>
             </div>
             <div id="content_area" class="content_area">
-                <div class="container">					                    											
+                <div class="container">					                    									
                     <div class="row">
                         <div class="col-xs-12">
                             <div id="content">
                                 <div class="navVisaLogo">
-                                    <h4  class="pages_container username_title col-md-8">CHECKOUT</h4>
-                                    <img class="headerNflVisaLogo col-md-4" src="./NFLShop.com_Visa_RGB[10].png" alt="">
+                                    <h4  class="pages_container username_title col-md-8" style="margin-top: 0;">CHECKOUT</h4>
+                                    <div class="myRow justify-content-end" style="align-items: baseline;">
+                                        <h4 style="text-transform: italic;font-style: italic; color: blue; margin: 0;" >presented by</h4>
+                                        <img class="headerNflVisaLogo col-md-4" src="./Visa_Brandmark_Blue_RGB.png" alt="">
+                                    </div>
                                 </div>
                                 <div class="myRow mt-2 justify-content-spceBtwn">    
                                     <!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
@@ -230,6 +233,71 @@
                                         <div class="card">
                                             <h2 class="auction_sub_title">Shipping Address:</h2>
                                             <form action="">
+                                                <div class="formRows myRow justify-content-spceBtwn">
+                                                    <div class="col-6">
+                                                        <label for="firstName">First Name</label>
+                                                        <input type="text" class="form-control" aria-label="First name" id="firstName">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="lastName">First Name</label>
+                                                        <input type="text" class="form-control" aria-label="Last name" id="lastName">
+                                                    </div>
+                                                </div>
+                                                <div class="formRows myRow justify-content-spceBtwn">
+                                                    <div class="col-6">
+                                                        <label for="inputEmail4">Email Address</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputEmailConfirm">Confirm Email Address</label>
+                                                        <input type="email" class="form-control" id="inputEmailConfirm">
+                                                    </div>
+                                                </div>
+                                                <div class="formRows myRow justify-content-spceBtwn">
+                                                    <div class="col-6">
+                                                        <label for="adress">Address</label>
+                                                        <input type="text" class="form-control" aria-label="Address" id="adress">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="adress2">Address Line 2</label>
+                                                        <input type="text" class="form-control" aria-label="Address Line 2" id="adress2">
+                                                    </div>
+                                                </div>
+                                                <div class="formRows myRow justify-content-spceBtwn">
+                                                    <div class="col-6">
+                                                        <label for="city">City</label>
+                                                        <input type="text" class="form-control" aria-label="City" id="city">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="province">Province</label>
+                                                        <select id="province" class="shipping-field form-control shadow-none error" tabindex="8" required="">
+                                                            <option>Select</option>
+                                                            <option value="AB">Alberta</option>
+                                                            <option value="BC">British Columbia</option>
+                                                            <option value="MB">Manitoba</option>
+                                                            <option value="NB">New Brunswick</option>
+                                                            <option value="NL">Newfoundland and Labrador</option>
+                                                            <option value="NT">Northwest Territories</option>
+                                                            <option value="NS">Nova Scotia</option><option value="NU">Nunavut</option>
+                                                            <option value="ON">Ontario</option>
+                                                            <option value="PE">Prince Edward Island</option><option value="QC">Quebec</option>
+                                                            <option value="SK">Saskatchewan</option>
+                                                            <option value="YT">Yukon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="card">
+                                            <h2 class="auction_sub_title">Billing Address:</h2>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked onchange="showBilling(flexCheckChecked)">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                  Same as shipping
+                                                </label>
+                                              </div>
+                                            <form action="" class="hidden" id="billingAddress">
                                                 <div class="formRows myRow justify-content-spceBtwn">
                                                     <div class="col-6">
                                                         <label for="firstName">First Name</label>
@@ -377,7 +445,7 @@
                                                 <p>$50.00</p>
                                             </div>
                                             <div class="submitBtn">
-                                                <img src="./Visa_Brandmark_Blue_RGB.png" alt="">
+                                                <!-- <img src="./Visa_Brandmark_Blue_RGB.png" alt=""> -->
                                                 <!-- <img src="./Visa_Brandmark_Blue_RGB.png" alt=""> -->
                                                 place order
                                             </div>
@@ -470,7 +538,15 @@
                     visaCheck.innerHTML=''
                 }
             }
-
+            function showBilling(id){
+                console.log(id.checked)
+                const billingForm = document.getElementById('billingAddress')
+                if(!id.checked){
+                    billingForm.className =''
+                }else{
+                    billingForm.className ='hidden'
+                }
+            }
         </script>
     </body>
 </html>
