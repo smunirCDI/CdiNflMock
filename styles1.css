@@ -4,6 +4,17 @@
     border-radius: 10px;
     box-shadow: 1px 6px 8px #00000017;
     margin-bottom: 15px;
+    position: relative;
+}
+.disabled{
+    background-color: #c2c2c2b8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+
 }
 
 .myRow{
@@ -98,9 +109,10 @@
     box-shadow: 1px 6px 8px #00000017;
     font-size: 1.8rem;
     font-weight: 700;
+    position: relative;
 }
 .submitBtn{
-    background-color: #454c52;
+    background-color: #042e66;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -112,6 +124,11 @@
     align-items: center;
     font-size: 1.7rem;
     font-weight: 700;
+    width: 100%;
+}
+.inactive{
+    background-color: #c2c2c2b8;
+    color: rgb(181, 181, 181);
 }
 .col-6 {
     width: 48%;
