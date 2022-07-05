@@ -301,6 +301,19 @@
                                             </div>
                                         </div>
                                         <div class="card">
+                                            <!-- <div class="disabled" id="shippingMethod"></div> -->
+                                            <h2 class="auction_sub_title">Shipping Method:</h2>
+                                            <div class="col-12">
+                                                <label hidden for="method">Shipping Method:</label>
+                                                <select id="method" class="shipping-field form-control shadow-none error" tabindex="8" required="true" onchange="handleinput('shippingMeth',id, value)">
+                                                    <option>Select</option>
+                                                    <option value="Standard">Standard</option>
+                                                    <option value="Express">Express</option>
+                                                    <option value="PickUp">Pick up</option>
+                                                </select  >
+                                            </div>
+                                        </div>
+                                        <div class="card">
                                             <div class="myRow justify-content-end">
                                                 <span class="standMedButton"><a href="#">Edit Address</a></span>
                                             </div>
@@ -311,61 +324,6 @@
                                                   Same as shipping
                                                 </label>
                                               </div>
-                                            <!-- <form action="" class="hidden" id="billingAddress">
-                                                <div class="formRows myRow justify-content-spceBtwn">
-                                                    <div class="col-6">
-                                                        <label for="firstName">First Name</label>
-                                                        <input type="text" class="form-control" aria-label="First name" id="firstName">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="lastName">First Name</label>
-                                                        <input type="text" class="form-control" aria-label="Last name" id="lastName">
-                                                    </div>
-                                                </div>
-                                                <div class="formRows myRow justify-content-spceBtwn">
-                                                    <div class="col-6">
-                                                        <label for="inputEmail4">Email Address</label>
-                                                        <input type="email" class="form-control" id="inputEmail4">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="inputEmailConfirm">Confirm Email Address</label>
-                                                        <input type="email" class="form-control" id="inputEmailConfirm">
-                                                    </div>
-                                                </div>
-                                                <div class="formRows myRow justify-content-spceBtwn">
-                                                    <div class="col-6">
-                                                        <label for="adress">Address</label>
-                                                        <input type="text" class="form-control" aria-label="Address" id="adress">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="adress2">Address Line 2</label>
-                                                        <input type="text" class="form-control" aria-label="Address Line 2" id="adress2">
-                                                    </div>
-                                                </div>
-                                                <div class="formRows myRow justify-content-spceBtwn">
-                                                    <div class="col-6">
-                                                        <label for="city">City</label>
-                                                        <input type="text" class="form-control" aria-label="City" id="city">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <label for="province">Province</label>
-                                                        <select id="province" class="shipping-field form-control shadow-none error" tabindex="8" required="">
-                                                            <option>Select</option>
-                                                            <option value="AB">Alberta</option>
-                                                            <option value="BC">British Columbia</option>
-                                                            <option value="MB">Manitoba</option>
-                                                            <option value="NB">New Brunswick</option>
-                                                            <option value="NL">Newfoundland and Labrador</option>
-                                                            <option value="NT">Northwest Territories</option>
-                                                            <option value="NS">Nova Scotia</option><option value="NU">Nunavut</option>
-                                                            <option value="ON">Ontario</option>
-                                                            <option value="PE">Prince Edward Island</option><option value="QC">Quebec</option>
-                                                            <option value="SK">Saskatchewan</option>
-                                                            <option value="YT">Yukon</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </form> -->
                                         </div>
                                         <div class="card">
                                             <div class="myRow justify-content-end">
