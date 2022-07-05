@@ -324,11 +324,11 @@
                                                 <label hidden for="method">Shipping Method:</label>
                                                 <select id="method" class="shipping-field form-control shadow-none error" tabindex="8" required="true" onchange="handleinput('shippingMeth',id, value)">
                                                     <option>Select</option>
-                                                    <option value="pickUp">pick up</option>
-                                                    <option value="sihp">ship</option>
+                                                    <option value="Standard">Standard</option>
+                                                    <option value="Express">Express</option>
+                                                    <option value="PickUp">Pick up</option>
                                                 </select  >
                                             </div>
-
                                         </div>
 
                                         <div class="card">
@@ -706,7 +706,6 @@
                     }else{
                         submitBtn.disabled =true
                         submitBtn.classList.add('inactive')
-                        
                     }
                 //     cardNumber: '',
                 // cvvNumber: '',
