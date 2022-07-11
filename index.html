@@ -430,7 +430,7 @@
                                                 </div>
                                             </div>
                                             <form action="" style="margin: 20px auto;">
-                                                <div class="formRows">
+                                                <!-- <div class="formRows">
                                                     <label for="cardNumber">Card Type</label>
                                                     <div class="myRow justify-content-spceBtwn">
                                                         <div class="col-6" onclick="selectCardType('visa')">
@@ -444,13 +444,22 @@
                                                         <div class="col-6" onclick="selectCardType('payPal')">
                                                             <div class="cstmSelect" id="payPal">
                                                                 <div style="display: inline-block;" id="payPalCheck">
-                                                                    <!-- <i class="fas fa-check"></i> -->
                                                                 </div>
                                                                 Pay pal
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                                </div> -->
+                                                <div  class="formRows myRow justify-content-spceBtwn">
+                                                    <div class="col-12">
+                                                        <label for="selectPayment">Choose Payment Option</label>
+                                                        <select id="selectPayment" class="shipping-field form-control shadow-none error" tabindex="8" required="" >
+                                                            <option value="Visa">Visa</option>
+                                                            <option value="Visa">                                                                 <img class="visaLogoSm" src="./Visa_Brandmark_Blue_RGB.png" alt=""> 
+                                                                 Visa</option>
+                                                            <option value="Paypal">Paypal</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="formRows myRow justify-content-spceBtwn">
                                                     <div class="col-12">
